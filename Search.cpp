@@ -17,6 +17,13 @@ int main()
     {
         cin >> arr[i];
     }
+    cout << "Before sorting, " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] ;
+        cout << " ";
+    }
+    cout << " " << endl;
     selectionSortUinp(arr,n);
 
     int search;
@@ -29,7 +36,13 @@ int main()
     cout << "If you want to use Linear Search type (LS)" << endl;
     cout << "If you want to use Linear Search type (BS)" << endl;
     getline(cin, whatTypeOfSearch);
-
+    cout << "After sorting, " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] ;
+        cout << " ";
+    }
+    cout << " " << endl;
     if (whatTypeOfSearch == "LS")
     {
         index = LinearSearch(arr ,n ,search);
