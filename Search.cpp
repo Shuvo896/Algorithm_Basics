@@ -1,8 +1,9 @@
 #include<iostream>
 #include<utility>
-#include "selectionSortUinp.cpp"
+#include "selectionSort.cpp"
 #include "BinarySearch.cpp"
 #include "LinearSearch.cpp"
+#include "bubbleSort.cpp"
 using namespace std;
 
 int main()
@@ -24,7 +25,27 @@ int main()
         cout << " ";
     }
     cout << " " << endl;
-    selectionSortUinp(arr,n);
+    cin.ignore();
+    cout <<"Which sorting you wanna use?"<< endl;
+    string sort;
+    cout << "To use Selection sort type (Selection)" << endl;
+    cout << "To use Bubble sort type (Bubble)" << endl;
+    getline(cin, sort);
+    if (sort == "Selection")
+    {
+        selectionSort(arr,n);
+    }
+    else if (sort == "Bubble")
+    {
+        bubbleSort(arr,n);
+    }
+    cout << "After sorting, " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] ;
+        cout << " ";
+    }
+    cout << " " << endl;
 
     int search;
     cout << "The number you wanna search: ";
@@ -36,13 +57,6 @@ int main()
     cout << "If you want to use Linear Search type (LS)" << endl;
     cout << "If you want to use Linear Search type (BS)" << endl;
     getline(cin, whatTypeOfSearch);
-    cout << "After sorting, " << endl;
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] ;
-        cout << " ";
-    }
-    cout << " " << endl;
     if (whatTypeOfSearch == "LS")
     {
         index = LinearSearch(arr ,n ,search);
