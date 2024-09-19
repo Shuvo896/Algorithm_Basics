@@ -4,6 +4,7 @@
 #include "BinarySearch.cpp"
 #include "LinearSearch.cpp"
 #include "bubbleSort.cpp"
+#include "insertionSort.cpp"
 using namespace std;
 
 int main()
@@ -30,6 +31,7 @@ int main()
     string sort;
     cout << "To use Selection sort type (Selection)" << endl;
     cout << "To use Bubble sort type (Bubble)" << endl;
+    cout << "To use Insertion sort type (Insertion)" << endl;
     getline(cin, sort);
     if (sort == "Selection")
     {
@@ -38,6 +40,10 @@ int main()
     else if (sort == "Bubble")
     {
         bubbleSort(arr,n);
+    }
+    else if (sort == "Insertion")
+    {
+        insertionSort(arr,n);
     }
     cout << "After sorting, " << endl;
     for (int i = 0; i < n; i++)
