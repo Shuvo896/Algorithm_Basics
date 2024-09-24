@@ -22,8 +22,7 @@ int main()
     cout << "Before sorting, " << endl;
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i] ;
-        cout << " ";
+        cout << arr[i] << " ";
     }
     cout << " " << endl;
     cin.ignore();
@@ -48,8 +47,7 @@ int main()
     cout << "After sorting, " << endl;
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i] ;
-        cout << " ";
+        cout << arr[i] << " ";
     }
     cout << " " << endl;
 
