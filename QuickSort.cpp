@@ -39,8 +39,8 @@ void quickSort(int A[], int l, int h)
     if (l < h)
     {
         j = partition(A, l, h);
-        quickSort(A, l, j-1);
-        quickSort(A, j+1, h);
+        return quickSort(A, l, j-1);
+        return quickSort(A, j+1, h);
     }
     
 }
