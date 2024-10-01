@@ -21,17 +21,15 @@ int main()
     cout << "Before sorting, " << endl;
     for (int i = 0; i < n; i++)
     {
-        cout << A[i] ;
-        cout << " ";
+        cout << A[i] << " ";
     }
-    cout << "" <<endl;
+    cout << endl;
     quickSort(A, l, h);
 
     cout << "After sorting, " << endl;
     for (int i = 0; i < n; i++)
     {
-        cout << A[i] ;
-        cout << " ";
+        cout << A[i] << " ";
     }
 }
 
